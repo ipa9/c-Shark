@@ -4,8 +4,7 @@ class Program
     {
         using var context = new ApplicationContext();
 
-        var student1 = new Student { Name = "John Doe", EnrollmentDate = DateTime.Now };
-        var student2 = new Student { Name = "Jane Doe", EnrollmentDate = DateTime.Now };
+        var student = new Student { Name = "John Doe", EnrollmentDate = DateTime.Now };
 
         var lecture = new Lecture
         {
@@ -13,6 +12,11 @@ class Program
             Date = DateTime.Now.AddDays(7),
             Capacity = 50
         };
+        context.Add(student);
+        context.Add(lecture);
+        context.SaveChanges();
+       var sst = context.Students.First();
+        Console.WriteLine(sst.Name);
 
     }
 }
