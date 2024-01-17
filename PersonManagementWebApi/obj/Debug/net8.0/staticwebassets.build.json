@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6nOQptLLyjs5baObxr3/BGfU7EuWnolWQa8F3TvE91A=",
+  "Source": "PersonManagementWebApi",
+  "BasePath": "_content/PersonManagementWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
